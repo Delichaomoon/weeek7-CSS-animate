@@ -3,15 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>第二週 - 個人網站</title>
+  <title>第七週 - 加入CSS Animate</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/all.css">
 </head>
 <body>
-  <div class="bg-black">
-		<header class="container">
+  <div class="bg-black" >
+		<header class="container" data-aos="fade-down">
 			<ul class="container nav d-flex jc-sb ">
 				<li>WILLIAM LEE</li>
 				<li>BASED IN TAIWAN</li>
@@ -45,15 +46,15 @@
 					</ul>
 				</div>
 				<div class="w-746 d-flex jc-sb">
-					<img src="./img/sparkle.png" alt="sparkle" />
-					<img src="./img/photographer.png" alt="photographer" />
-					<img src="./img/people-2.png" alt="people-2" />
+					<img data-aos="flip-left" src="./img/sparkle.png" alt="sparkle" />
+					<img data-aos="flip-left" src="./img/photographer.png" alt="photographer" />
+					<img data-aos="flip-left" src="./img/people-2.png" alt="people-2" />
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="bg-white">
-		<div class="about container d-flex jc-sb">
+		<div class="about container d-flex jc-sb" data-aos="flip-left">
 			<ol class="about-left w-636 d-flex jc-sb">
 				<li>
 					<p class="fz-3">01 <br/>
@@ -88,7 +89,7 @@
 	</div>
 	<div class="bg-purple">
 		<div class="container">
-			<div class="contactMe d-flex jc-sb aic">
+			<div class="contactMe d-flex jc-sb aic" data-aos="flip-left">
 				<div class="contact-left">
 					<h3 class="h2 white">CONTACT ME <span class="arrow-right"></span></h3>
 				</div>
@@ -100,18 +101,18 @@
 			</div>
 		</div>
 	</div>
-	<div class="bg-white">
+	<div class="bg-white" data-aos="fade-up">
 		<div class="container ptb-160">
 			<h2 class="h2 mb-16 w-746 ml-a">My Projects</h2>
 			<div class="project d-flex jc-sb">
-				<img class=".w-416" src="./img/Rectangle 10.png" alt="Rec10">
+				<img data-aos="zoom-in-down" class=".w-416" src="./img/Rectangle 10.png" alt="Rec10">
 				<div class="w-856 d-flex f-col jc-sb">
 					<div class="d-flex">
-						<img class="w-196 mb-24 mr-24" src="./img/Rectangle 15.png" alt="Rec15">
+						<img data-aos="zoom-in-down" class="w-196 mb-24 mr-24" src="./img/Rectangle 15.png" alt="Rec15">
 						<div class="w-636 d-flex f-col jc-sb">
 							<p>I've worked on a variety of websites, including e-commerce sites, blogs, and landing pages. I take pride in creating clean, efficient, and user-friendly code.</p>
 							<a href="#" class="see-more d-flex">SEE MORE 
-								<img src="./img/arrow_outward-white.png" alt="arrow_outward-white" class="ml-4">
+								<img data-aos="zoom-in-down" src="./img/arrow_outward-white.png" alt="arrow_outward-white" class="ml-4">
 							</a>
 						</div>
 					</div>
@@ -131,3 +132,8 @@
 	</footer>
 </body>
 </html>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
